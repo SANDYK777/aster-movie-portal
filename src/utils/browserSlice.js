@@ -3,7 +3,7 @@ let browserSlice = createSlice({
     name:'browsingHistory',
     initialState:{
      browesedMovies:[]  ,
-     selectBy:"",
+     selectBy:"ByPopular",
      viewCount:0 
     },
     reducers:{

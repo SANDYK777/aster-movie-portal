@@ -9,7 +9,7 @@ const useMovies=()=>{
     const [movies,setMovies]= useState();
     let url ='';
     const getMovies = async()=>{
-      url =selectionType==='ByPopular'? base_url+"/discover/movie?sort_by=popularity.desc":url=yearly_release_url;
+      url =selectionType!=='ByPopular'? yearly_release_url:base_url+"/discover/movie?sort_by=popularity.desc";
      
         console.log(url);
         let movies= await fetch(url,{
